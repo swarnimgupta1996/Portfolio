@@ -1,0 +1,517 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css" />
+ <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<style>
+body
+{
+background-image:url("https://s-media-cache-ak0.pinimg.com/736x/03/3a/81/033a81c38f4fc8583d4c936c4c203f91.jpg");
+background-repeat: no-repeat;
+background-attachment:fixed;
+    background-size: cover;
+	font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
+nav
+{
+  margin-top:-200px;
+  margin-left:-10px;
+  text-align:center;
+  position:fixed;
+  z-index:12;
+  background-color:rgba(144,144,144,0.3);
+  padding:60px 25px;
+  
+  }
+ul
+	{
+	list-style-type: none;
+	padding-top =550px;
+	padding-bottom =650px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-color:#655D5D;
+	border-width: 0.5px;
+	
+	}
+	li a
+	{
+	
+	color:black;
+	text-decoration:none;
+	padding-left:78px;
+	padding-right:78px;
+	font-family:"Lucida Console",Monaco,monospace;
+	
+	font-size:20px;
+	
+	}
+	li a:hover {
+    color: blue;
+    }
+
+	
+	li
+	{
+	display: inline;
+    }
+	.round
+	{
+	background-color:#131313;
+	text-decoration:none;
+	text-align:center;
+	padding-top:60px;
+	padding-bottom:60px;
+	border-radius:100%;
+	border-style: double;
+	border-width: thick;
+	}
+	#welcome
+	{
+	font-size:58px;
+	margin-top:200px;
+	margin-left:-200px;
+	text-align:center;
+	padding: 30px 0 0 0;
+	     text-shadow: 3px 3px #787878,
+					  2px 2px #686868,
+					  1px 1px #585858;
+	}
+	#hello
+	{
+	text-align:center;
+	font-size:20px;
+	
+    width:280px;
+	height= auto;
+	border-style:solid;
+	margin-left:1050px;
+	margin-right:50px;
+	margin-top:-340px;
+word-break: break-word;
+	}
+   #about{
+   text-align:center;
+   padding-bottom:350px;
+   background-color:rgba(225,0,0,0.5);
+   
+   
+   }
+   #work
+   {
+   text-align:center;
+   background-color:rgba(225,225,0,0.5);
+   padding-bottom:200px;
+  
+   }
+   #process{
+   text-align:center;
+   background-color:rgba(153,0,204,0.5);
+   padding-bottom:755px;
+   }
+   #contact
+   {
+   text-align:center;
+   background-color:rgba(51,255,102,0.5);;
+   padding-bottom:170px;
+   
+   }
+  h1{
+  font-family: 'Copperplate Gothic Light', serif;
+  }
+  
+.btn-blue {
+margin-right:-335px;
+  background: #108FE8;
+  border: 3px solid #fff;
+  border-radius: 100%;
+  box-shadow: 0 -2px 0 3px #0d72b8 inset, 0 5px 5px rgba(3, 25, 41, 0.17), 0 15px rgba(255, 255, 255, 0.25) inset;
+  cursor: pointer;
+  display: inline-block;
+  height: 7vw;
+  width: 7vw;
+  margin-bottom:10px;
+
+}
+.btn-blue:hover {
+
+  background: #333;
+  box-shadow: 0 -2px 0 3px #1a1a1a inset, 0 5px 5px rgba(0, 0, 0, 0.17), 0 15px rgba(255, 255, 255, 0.32) inset;
+}
+
+.btn-red {
+  background: #E53030;
+  border: 3px solid #fff;
+  border-radius: 100%;
+  box-shadow: 0 -2px 0 3px #c91919 inset, 0 5px 5px rgba(65, 8, 8, 0.17), 0 15px rgba(255, 255, 255, 0.25) inset;
+  cursor: pointer;
+  display: inline-block;
+  height: 7vw;
+  width: 7vw;
+  margin-bottom:10px;
+  
+}
+.btn-red:hover {
+  background: #333;
+  box-shadow: 0 -2px 0 3px #1a1a1a inset, 0 5px 5px rgba(0, 0, 0, 0.17), 0 15px rgba(255, 255, 255, 0.32) inset;
+}
+
+.btn-green {
+  background: #0EC518;
+  border: 3px solid #fff;
+  border-radius: 100%;
+  box-shadow: 0 -2px 0 3px #0b9512 inset, 0 5px 5px rgba(0, 7, 1, 0.17), 0 15px rgba(255, 255, 255, 0.25) inset;
+  cursor: pointer;
+  display:inline-block;
+  height: 7vw;
+  width: 7vw;
+  margin-right:0px;
+  padding-bottom:0px;
+  margin-bottom:10px;
+}
+.btn-green:hover {
+  background: #333;
+  box-shadow: 0 -2px 0 3px #1a1a1a inset, 0 5px 5px rgba(0, 0, 0, 0.17), 0 15px rgba(255, 255, 255, 0.32) inset;
+}
+
+.btn-yellow {
+ padding-top:0px;
+  background: #FFC334;
+  border: 3px solid #fff;
+  border-radius: 100%;
+  box-shadow: 0 -2px 0 3px #ffb401 inset, 0 5px 5px rgba(103, 73, 0, 0.17), 0 15px rgba(255, 255, 255, 0.25) inset;
+  cursor: pointer;
+  display: inline-block;
+  height: 7vw;
+  width: 7vw;
+  margin-bottom:20px;
+}
+.btn-yellow:hover {
+  background: #333;
+  box-shadow: 0 -2px 0 3px #1a1a1a inset, 0 5px 5px rgba(0, 0, 0, 0.17), 0 15px rgba(255, 255, 255, 0.32) inset;
+}
+#one,#two,#three,#four
+{
+background-color:black;
+color:white;
+text-align:center;
+	font-size:20px;
+	font-family:"Comic Sans MS", cursive, sans-serif	
+	height= auto;
+	width:230px;
+	border-style:solid;
+	border-color:black;
+	margin-right:100px;	
+   word-break: break-word;
+   opacity:0; 
+position:relative;   
+}
+#one,#three
+{float:right;
+}
+#two{
+margin-top:-110px;}
+#three{
+margin-top:40px;
+margin-right:-235.5px;}
+#two,#four
+{float:left;
+}
+
+.animate
+{
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+.action-button
+{
+	position: relative;
+	padding: 0px 40px;
+  margin: 0px 10px 10px 0px;
+  float: left;
+	border-radius: 10px;
+	font-family: 'Pacifico', cursive;
+	font-size: 25px;
+	color: #FFF;
+	text-decoration: none;	
+}
+
+.blue
+{
+	background-color: #3498DB;
+	border-bottom: 5px solid #2980B9;
+	text-shadow: 0px -2px #2980B9;
+}
+
+.red
+{
+	background-color: #E74C3C;
+	border-bottom: 5px solid #BD3E31;
+	text-shadow: 0px -2px #BD3E31;
+}
+
+.green
+{
+	background-color: #82BF56;
+	border-bottom: 5px solid #669644;
+	text-shadow: 0px -2px #669644;
+}
+
+.yellow
+{
+	background-color: #F2CF66;
+	border-bottom: 5px solid #D1B358;
+	text-shadow: 0px -2px #D1B358;
+}
+.violet{
+background-color: #660066;
+	border-bottom: 5px solid #470058;
+	text-shadow: 0px -2px #470058;
+}
+.orange{
+background-color: #FF6633;
+	border-bottom: 5px solid #E04A25;
+	text-shadow: 0px -2px #E04A25;
+}
+.action-button:active
+{
+	transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid;
+}
+</style>
+<script>
+var c=0,d=0,e=0,f=0;
+$(document).ready(function()
+{
+
+$("#a").click(function(){
+          
+           $( 'html,body').animate({
+        scrollTop: $("#about").offset().top-($('.header').outerHeight()+150)
+    }, 800);
+	
+	});
+$("#w").click(function(){
+          
+           $( 'html,body').animate({
+        scrollTop: $("#work").offset().top-($('.header').outerHeight()+150)
+    }, 800);
+	
+	});
+	$("#p").click(function(){
+          
+           $( 'html,body').animate({
+        scrollTop: $("#process").offset().top-($('.header').outerHeight()+150)
+    }, 800);
+	
+	});
+	$("#c").click(function(){
+          
+           $( 'html,body').animate({
+        scrollTop: $("#contact").offset().top-($('.header').outerHeight()+150)
+    }, 800);
+	
+	});
+     $(".btn-blue").click(function(){if(c==0){
+	 $("#one").css({"opacity":"1","transition":"0.5s"});
+	 c=1;
+	 }else{
+	 
+	 $("#one").css({"opacity":"0","transition":"0.5s"});
+	 c=0;}
+	 });
+	 $(".btn-red").click(function(){if(d==0){
+	 $("#two").css({"opacity":"1","transition":"0.5s"});
+	 d=1;
+	 }else{
+	 
+	 $("#two").css({"opacity":"0","transition":"0.5s"});
+	 d=0;}
+	 });
+	 $(".btn-green").click(function(){if(e==0){
+	 $("#three").css({"opacity":"1","transition":"0.5s"});
+	 e=1;
+	 }else{
+	 
+	 $("#three").css({"opacity":"0","transition":"0.5s"});
+	 e=0;}
+	 });
+	 $(".btn-yellow").click(function(){if(f==0){
+	 $("#four").css({"opacity":"1","transition":"0.5s"});
+	 f=1;
+	 }else{
+	 
+	 $("#four").css({"opacity":"0","transition":"0.5s"});
+	 f=0;}
+	 });
+	 
+	 $("#p1").click(function()
+	 {$("#p2").css({"opacity":"1","transition":"0.5s"});
+	 });
+	 $("#p2").click(function()
+	 {$("#p3").css({"opacity":"1","transition":"0.5s"});
+	 });
+	 $("#p3").click(function()
+	 {$("#p4").css({"opacity":"1","transition":"0.5s"});
+	 });
+	 $("#p4").click(function()
+	 {$("#p5").css({"opacity":"1","transition":"0.5s"});
+	 });
+	 $("#p5").click(function()
+	 {$("#p6").css({"opacity":"1","transition":"0.5s"});
+	 });
+	 $("#p6").click(function()
+	 {$("#p2").css({"opacity":"0","transition":"0.5s"});
+	 $("#p3").css({"opacity":"0","transition":"0.5s"});
+	 $("#p4").css({"opacity":"0","transition":"0.5s"});
+	 $("#p5").css({"opacity":"0","transition":"0.5s"});
+	 $("#p6").css({"opacity":"0","transition":"0.5s"});
+	 });
+
+	});
+</script>
+
+</head>
+
+
+<body>
+<nav>
+  <ul>
+    <li>
+        <a   href="#" id="h" style ="padding-left:30px;" >HOME</a>
+    </li>
+    <li>
+        <a href="#"  id="a" style ="padding-left:50px;" >ABOUT </a>
+    </li>
+    <li>
+        <a href="#" id="w" style ="padding-right:90px;padding-left:20px;">WORK</a>
+    </li>
+    
+     <a href =# class="round" id="h"  style ="font-size:37px;color:white;" >SWARNIM</a>
+    <li>
+        <a href="#" id="p" style ="padding-left:110px">PROCESS</a>
+    </li>
+    <li>
+        <a href="#" id="c"  style ="padding-right:110px">CONTACT </a>
+    </li>
+	
+</ul>
+</nav>
+<section id="home">
+<h1 id="welcome">  WELCOME TO MY WORLD</h1>
+<img style="margin-left:80px;" src="http://3oneseven.com/wp-content/uploads/HLIC/world-in-hands.jpg" alt="welcome" width="850px" height="300px"></img>
+<div id="hello">
+<img src= "my.gif" alt="swarnim gupta" width="160px" height="200px"></img>
+<p> Hello!this is Swarnim (me) in this oval picture,Welcome to my page,I am glad that you are here<p>
+</div>
+<br/><br/><br/><br/>
+<br/><br><br/><br/>
+<br/><br><br/><br/>
+
+</section>
+<section id="about">
+<h1 style = "padding-top:40px;">  KNOW ABOUT ME </h1>
+
+    <span class="btn-blue"></br></br>General Information</span>
+	<div id= "one">
+	General Information
+	<table cellspacing ="5" cellpadding = "3" border = "0" style="color:white";>
+<tr><td>Name</td> <td>Swarnim Gupta</td> 
+    </tr>
+	<tr><td>Education</td> <td>Pursuing B.Tech(2nd year)</td> 
+    </tr>
+	<tr><td>Gender</td> <td>Female</td> 
+    </tr>
+	<tr><td>D.O.B</td> <td>29/05/1996</td> 
+    </tr>
+	<tr><td>Father's Name</td> <td>Vijay Gupta</td> 
+    </tr>
+	
+	
+	</table>
+	</div>
+	
+	
+	</br>
+	<span class="btn-red"></br></br>Life's Essentials</span>
+	<div id= "two">
+	 <img src= "essentials.png" alt="essentials" width="240" height="240px"></img>
+	</div></br>
+	<span class="btn-green"></br></br>skills</span>
+	<div id= "three">
+	SKILLS
+	<p>--Non-Technical--</br>Speaking,Leadership,TeamWorker,Creative</p><br/>--Digital-Competence--</br>Java,C,c++,MATLAB<br/>Good command over Data Structures & Algoriths<br/>  HTML,JavaScript,CSS,PHP,Visual Basic</br>
+	</div>
+	</br>
+	<span class="btn-yellow"></br></br>Qualities</span>
+	<div id= "four">
+	QUALITIES(I'll mention only the good ones here)</br>
+	-HardWorking</br>
+	-Patience</br>
+	-Integrity</br>
+	-Benevolence</br>
+	-Punctuality</br>
+	-Endurance</br>
+	
+	
+	</div>
+	</br>
+
+
+</section>
+<section id="work">
+<h1 style = "padding-top:50px;margin-left:-20px;">  WORK</h1>
+<br/></br>
+
+
+<p>I am a student.My work is my projects and my activities.<br/>
+           This website is itself is my work<br/><br/>I am a part of  a project "Techblaze" in which we are developing a website<br/>I am a part of "SRMKZILLA",which is the official club of "MOZILLA " organisation and I work for it</br> I am a student co-ordinator of Software Association of my college.
+<br/> Organised Events in our college fest as a volunteer and had also been a volunteer in organising "Google Hangouts" event.<br/> 
+<br/>ACHIEVEMENTS due to Hardwork <br/><br/>. Awarded silver medal in state level badminton championship.<br/>Awarded for securing good marks (92.4%) in 10th boards ICSE<br/>
+Awarded scholarship (2016)for being among the branch toppers. CGPA(9.583) .<br/>
+Won the event "Green Avengers " held in 2014 in our college fest "MILAN".
+<br/><br/><br/><br/><br/><br/>
+</section>
+<section id="process">
+<h1 style = "padding-top:40px;">  PROCESS </h1> 
+</br>
+My brain processes in the following manner</br>
+<div id="p1" class="action-button shadow animate green"  style= "width:100px;margin-left:150px;font-size:29px; cursor:pointer;"> Start </div>
+<div  id="p2" class="action-button shadow animate blue" style= "width:170px;margin-left:-50px;margin-top:80px;font-size:29px;opacity:0; cursor:pointer;"> Understand & Decide  </div>
+<div  id= "p3" class="action-button shadow animate violet" style= "width:120px;margin-left:-50px;margin-top:210px;font-size:29px;opacity:0; cursor:pointer;"> Design </div>
+<div  id= "p4" class="action-button shadow animate yellow"style= "width:150px;margin-left:690px;font-size:29px;opacity:0; cursor:pointer;">  Construct </div>
+<div id="p5" class="action-button shadow animate orange" style= "width:120px;margin-left:890px;font-size:29px;opacity:0; cursor:pointer;">  Launch </div>
+<div id="p6" class="action-button shadow animate red" style= "width:100px;margin-left:1090px;font-size:29px;opacity:0; cursor:pointer;">     Stop </div>
+</section>
+<section id="contact">
+<h1 style = "padding-top:40px ;">  CONTACT </h1>
+          If you are reading this page,i think you might like to contact me..you can do that in the following ways
+		  
+		</br> </br>
+		DROP ME A MAIL at</br>
+		swarnim.gupta96@gmail.com</br></br>
+		
+		GIVE ME A PHONE CALL OR WHATSAPP ME @</br>
+		8124860694</br></br>
+		 Or if you want to visit my place,then you are most welcome(just ping me before that)</br>
+		 A-20,Rahul Vihar,</br>
+		 Shamshabad Road,</br>
+		 Agra -282001.</br>
+		 
+		
+</section>
+
+
+
+
+</body>
+
+
+
+
+
+</html>
